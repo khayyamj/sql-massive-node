@@ -1,0 +1,18 @@
+<button ui-sref="home">Back</button>
+<div class="">
+   <img src="{{product.imageurl}}" alt="{{product.name}}" /> <br>
+   Name: {{product.name}}
+   Price: {{product.price}} <br>
+   Description: {{product.description}} <br> <hr>
+</div>
+<form method="post">
+   <h3>Use this form to update this product's information: </h3>
+   <input ng-model="productUpdate.name" placeholder="Product Name"></input>
+   <input ng-model="productUpdate.price" placeholder="Price"></input>
+   <input ng-model='productUpdate.description' placeholder="Description"></input>
+   <input ng-model="productUpdate.imageUrl" placeholder="Picture Url"></input>
+</form>
+<button ng-click="update(productUpdate)">Update</button>
+
+<hr>
+<button ng-click="remove()">Remove Product</button>

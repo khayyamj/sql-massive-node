@@ -12,7 +12,7 @@ var config = require('./config');
 var app = module.exports = express();
 // INITILIZE DEPENDENCIES
 // ============================================================
-// app.use(express.static(__dirname + './../public'));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 // MASSIVE SETUP
 // ============================================================

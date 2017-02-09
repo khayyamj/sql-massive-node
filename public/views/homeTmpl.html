@@ -1,0 +1,23 @@
+<div class="">
+   <h1>Welcome to the Product Database</h1>
+   <h2>Check out our product line:</h2>
+   <hr>
+</div>
+<div class="" ng-repeat='product in products'>
+   <a ui-sref="details({id: product.id})">
+      <img src="{{product.imageurl}}" alt="{{product.name}}">
+   </a> <br>
+   Name: {{product.name}}
+   Price: {{product.price}} <br />
+   <hr />
+</div>
+
+<div class="">
+   <h4>Add a New Product:</h4>
+   <input ng-model='newProduct.name' placeholder="Product Name" />
+   <input ng-model='newProduct.price' placeholder="Price $" />
+   <input ng-model='newProduct.description' placeholder="Description" />
+   <input ng-model='newProduct.imageUrl' placeholder="Image Url" />
+   <button ng-click="addNewItem(newProduct)">Add Product</button>
+</div>
+<br><br><hr>

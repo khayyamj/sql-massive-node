@@ -1,1 +1,1 @@
-SELECT name, price, imageUrl FROM Products
+SELECT name, price, imageUrl, id FROM Products
